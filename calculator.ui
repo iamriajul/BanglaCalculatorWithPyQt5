@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QMainWindow" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>460</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Bangla Calculator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.ico</normaloff>icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_multiply">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">multiply</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>×</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_plus">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>249</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">plus</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_minus">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>319</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">minus</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_equals">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>390</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: white;
+	background: #5DF274;
+	padding-right: 2px;
+}</string>
+    </property>
+    <property name="text">
+     <string>০</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByKeyboard|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_divide">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>130</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">divide</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>÷</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_percent">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>129</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">percent</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_clear">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>129</y>
+      <width>201</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>279</y>
+      <width>100</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">4</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>৪</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>279</y>
+      <width>100</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">5</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>৫</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>280</y>
+      <width>100</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">6</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>৬</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>330</y>
+      <width>100</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">1</string>
+    </property>
+    <property name="accessibleName">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>১</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>329</y>
+      <width>100</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">2</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>২</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>329</y>
+      <width>100</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">3</string>
+    </property>
+    <property name="accessibleName">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>৩</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_0">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>390</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">0</string>
+    </property>
+    <property name="accessibleName">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>০</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_decimal">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>390</y>
+      <width>100</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>230</y>
+      <width>100</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">7</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>৭</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>230</y>
+      <width>100</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">8</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>৮</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>230</y>
+      <width>100</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string notr="true">9</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background: #008B18;
+	color: white;
+	border: 1px groove #46EB69;
+}
+QPushButton:hover{
+	background: #009D1D;
+	color: white;
+	border: 1px outset #008B18;
+}</string>
+    </property>
+    <property name="text">
+     <string>৯</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
